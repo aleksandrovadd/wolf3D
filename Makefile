@@ -17,8 +17,7 @@ FLAGS_MLX = -lmlx -framework OpenGL -framework AppKit
 
 NAME = wolf3d
 
-SRC = wolf.c redraw_wolf.c read_map.c read_sprites.c init.c hooks.c txt_col_man.c\
-		draw_lines.c sprite_cast.c sprite_cast_2.c
+SRC = wolf.c redraw_wolf.c read_map.c init.c hooks.c txt_col_man.c draw_lines.c 
 
 LIB = libft/libft.a
 LIBPRINT = ft_printf/libftprintf.a
