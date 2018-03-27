@@ -57,6 +57,10 @@ void			draw_floor(t_wolf *w)
 	}
 }
 
+/*
+** Draws vertical lines, starting from the ceiling, then walls and floor
+*/
+
 void			ver_line(t_wolf *w)
 {
 	long int	i;

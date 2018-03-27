@@ -47,4 +47,4 @@ fclean: clean
 	@rm -rf $(NAME)
 	@echo "\033[31m<<Deleted wolf3d>>\033[31m"
 
-re: clean all
+re: fclean all

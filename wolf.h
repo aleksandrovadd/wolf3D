@@ -55,11 +55,6 @@ typedef struct		s_wolf
 	int				line2;
 	int				ed2;
 
-	char			*pxl3;
-	int				bpp3;
-	int				line3;
-	int				ed3;
-
 	void			*floor;
 	void			*wall;
 	void			*wall_1;
@@ -71,8 +66,6 @@ typedef struct		s_wolf
 	void			*gob;
 	void			*hole;
 	void			*eagle;
-	void			*barrel;
-	void			*gr_light;
 	void			*pillar;
 	int				color;
 
@@ -129,31 +122,6 @@ typedef struct		s_wolf
 	int				floor_tex_x;
 	int				floor_tex_y;
 
-	double			spr_x;
-	double			spr_y;
-	int				spr_text;
-	int				spr_order[NUM_SPR];
-	double			spr_dist[NUM_SPR];
-	double			sprite_x;
-	double			sprite_y;
-	double			inv_det;
-	double			tr_x;
-	double			tr_y;
-	int				spr_scr_x;
-	int				spr_h;
-	int				dr_st_y;
-	int				dr_e_y;
-	int				spr_wth;
-	int				dr_st_x;
-	int				dr_e_x;
-	int				stripe;
-	int				tex_x;
-	int				tex_y;
-
-	int				r3;
-	int				g3;
-	int				b3;
-
 	int				world_map[MAP_WIDTH][MAP_HEIGHT];
 	double			spr_map[NUM_SPR][3];
 	double			z_buf[SCR_W];
@@ -190,12 +158,4 @@ int					key_hook(int key, t_wolf *w);
 int					funct(t_wolf *w);
 void				redraw_wolf(t_wolf *w);
 
-void				sprite_casting(t_wolf *w);
-void				projection_sprites(t_wolf *w);
-void				draw_sprite(t_wolf *w);
-void				sprite_width(t_wolf *w);
-void				comb_sort(t_wolf *w);
-void				swap_double(double inf, double chan);
-void				swap_int(int inf, int chan);
-void				choose_sprite(t_wolf *w, int i);
 #endif
