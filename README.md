@@ -1,5 +1,9 @@
 # wolf3D
 
+This project is inspired by the world-famous eponymous 90’s game, which
+was the first FPS ever. It was made to explore ray-casting. The goal was to
+make a dynamic view inside a maze.
+
 This project is written with the help of minilibx library. Minilibx is a very basic graphical library
 writting in C used in [42](http://www.42.fr/). To learn more about minilibx see https://github.com/dannywillems/minilibx.
 
